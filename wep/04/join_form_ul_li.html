@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .list_form{
+            display: inline-flex;
+            margin: 5px;
+            align-items: center;
+        }
+        .form_item{
+            margin-left: 90px;
+        }
+        #email{
+            margin-left: 0px;
+        }
+        li{
+            list-style-type: square;
+        }
+        #userID{
+            margin-left: 90px;
+        }
+        #userPass{
+            margin-left: 77px;
+        }
+        #passCh{
+            margin-left: 45px;
+        }
+        #name{
+            margin-left: 103px;
+        }
+        #girl{
+            margin-left: 101px;
+        }
+        #man{
+            margin-left: 20px;
+        }
+        #phone1{
+            margin-left: 73px;
+        }
+        #email{
+            margin-left: 87px;
+        }
+        #domain{
+            margin-left: 0px;
+        }
+        #introduce{
+            margin-left: 75px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>회원 가입 양식</h1>
+    <form action="">
+    <ul>
+        <li>
+            <div class="list_form">
+                <h5>아이디</h5>
+                <input id="userID" class="form_item" type="text">
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>비밀번호</h5>
+                <input id="userPass" class="form_item" type="password">
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>비밀번호 확인</h5>
+                <input id="passCh" class="form_item" type="password">
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>이름</h5>
+                <input id="name" class="form_item" type="text">
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>성별</h5>
+                <input class="form_item" type="radio" name="" id="girl" value="여성">여성
+                <input class="form_item" type="radio" name="" id="man" value="남성">남성
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>전화번호</h5>
+                <select class="form_item" name="" id="phone1">
+                    <option value="02">02</option>
+                    <option value="032">032</option>
+                    <option value="041">041</option>
+                </select>&nbsp;-&nbsp;
+                <input type="text" id="phone2">&nbsp;-&nbsp;
+                <input type="text" id="phone3">
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>이메일</h5>
+                <input class="form_item" type="text" id="email">&nbsp;@&nbsp;
+                <select class="form_item" name="domain" id="domain">
+                    <option value="">선택</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="">직접입력</option>
+                </select>
+            </div>
+        </li>
+        <li>
+            <div class="list_form">
+                <h5>자기소개</h5>
+                <textarea class="form_item" name="" id="introduce" cols="30" rows="10"></textarea>
+            </div>
+        </li>
+    </ul>
+    </div>
+</form>
+</body>
+</html>

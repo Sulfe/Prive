@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            th {
+                text-align: left;
+                padding-right: 15px;
+            }
+            textarea {
+                resize: vertical;
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>회원 가입 양식</h1>
+            <table>
+                <tr>
+                    <th>아이디</th>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input class="form_item" type="password" /></td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td><input class="form_item" type="password" /></td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td><input class="form_item" type="text" /></td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        <input class="form_item" type="radio" name="" id="" value="여성" />여성
+                        <input class="form_item" type="radio" name="" id="" value="남성" />남성
+                    </td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td>
+                        <select class="form_item" name="" id="">
+                            <option value="02">02</option>
+                            <option value="032">032</option>
+                            <option value="041">041</option></select
+                        >&nbsp;-&nbsp; <input type="text" />&nbsp;-&nbsp; <input type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>
+                        <input class="form_item" type="text" />&nbsp;@&nbsp;
+                        <select class="form_item" name="email" id="email">
+                            <option value="">선택</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="">직접입력</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>자기소개</th>
+                    <td><textarea class="form_item" name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

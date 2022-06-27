@@ -1,0 +1,86 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Gowun Batang", serif;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #50586c;
+    padding: 0 30px;
+    border-radius: 7px;
+    filter: opacity(90%);
+}
+.title a {
+    text-decoration: none;
+}
+
+.title h1 {
+    color: white;
+}
+
+.title ul {
+    display: flex;
+}
+
+.title ul > li {
+    list-style: none;
+}
+
+.title ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.title ul > li > a:hover {
+    border-radius: 7px;
+    color: #000000;
+    background-color: #dce2f0;
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    filter: opacity(60%);
+}
+
+video {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.codeTable {
+    width: 100%;
+    height: 100%;
+    background-color: #dce2f0;
+    border-radius: 5px;
+    margin-top: 20%;
+}
+
+.codeTable a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #50586c;
+}
+
+.codeTable th {
+    padding: 15px 50px;
+}
+
+.codeTable td {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.intro {
+}
