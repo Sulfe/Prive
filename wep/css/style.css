@@ -1,29 +1,42 @@
+/*
+white #FCF6F5
+blue  #7b9acc
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     padding: 0px;
     margin: 0px;
     font-family: "Gowun Batang", serif;
-    overflow: auto;
-    background-color: #50586c;
+    background-color: #fcf6f5;
 }
+
+/* nav start */
 
 .title {
     top: 0px;
     width: 100%;
-    position: fixed;
+    height: 80px;
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
-    background-color: #50586c;
+    background-color: #7b9acc;
     padding: 0 30px;
-
     filter: opacity(90%);
+    border-bottom: 1xp solid #7b9acc;
+    transition: all 0.5s;
 }
 .title a {
     text-decoration: none;
 }
 
 .title h1 {
-    color: white;
+    color: #fcf6f5;
 }
 
 .title ul {
@@ -36,39 +49,51 @@ body {
 
 .title ul > li > a {
     text-decoration: none;
-    color: white;
-    padding: 20px;
+    color: #fcf6f5;
+    padding: 10px 20px 10px 20px;
 }
 
 .title ul > li > a:hover {
     border-radius: 7px;
-    color: #000000;
-    background-color: #dce2f0;
+    color: #7b9acc;
+    background-color: #fcf6f5;
 }
 
-#myVideo {
-    width: 100%;
-    overflow: hidden;
-    filter: opacity(60%);
+.title.fixed {
+    height: 20px;
+}
+/* nav end */
+
+/* scroll nav change start*/
+.small {
+    font-size: 12px;
+    height: 29px;
+    transition: all ease-in-out 0.5s;
 }
 
-video {
-    width: 100%;
+.small ul > li > a {
+    text-decoration: none;
+    color: #fcf6f5;
+    margin: 0 10px 0 10px;
+    padding: 0 10px 0 10px;
 }
+
+.small ul > li > a:hover {
+    border-radius: 7px;
+    color: #7b9acc;
+    background-color: #fcf6f5;
+}
+
+/* scroll nav change end*/
 
 .container {
     width: 80%;
     margin: auto;
-    color: #dce2f0;
+    color: #fcf6f5;
 }
 
+/* my code list start */
 .codeTable {
-    width: 100%;
-    height: 100%;
-    background-color: #dce2f0;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-bottom: 150px;
 }
 
 .codeTable a {
@@ -88,11 +113,232 @@ video {
     padding: 0px 10px;
 }
 
-.intro_self {
-    background-color: #dce2f0;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    padding: 15px 20px;
-    color: #50586c;
+/* my code list end */
+
+/* introduce.html start */
+
+.intro {
+    height: 100%;
+    color: #000000;
     border-radius: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.intro h2 {
+    font-weight: 700;
+}
+
+.intro h3 {
+    font-weight: 300;
+}
+
+.intro p {
+    font-weight: 500;
+}
+.intro-img img {
+    width: 100%;
+}
+
+/* introduce.html */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    display: none;
+    z-index: 0;
+}
+
+.slide.enabled {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* codelist page */
+
+.table-box-wrap {
+    font-family: "Noto Sans KR", sans-serif;
+    position: absolute;
+    border: 1px solid #fcf6f5;
+    width: 80%;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+.table-box-wrap .table-box {
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-top: 40px;
+}
+.table-box-wrap .table-box table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.table-box-wrap .table-box table thead tr {
+    position: absolute;
+    top: 0;
+}
+.table-box-wrap .table-box table thead tr th {
+    font-weight: normal;
+    width: 120px;
+    height: 40px;
+    background: #7b9acc;
+    color: #fcf6f5;
+}
+
+.table-box-wrap .table-box table td {
+    text-align: center;
+    height: 40px;
+    border-top: 1px solid #7b9acc;
+    color: #7b9acc;
+}
+
+.table-box-wrap .table-box table tr {
+    padding-top: 40px;
+    display: inline-table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-box table tbody tr a {
+    text-decoration: none;
+    color: #7b9acc;
+    font-weight: 500;
+}
+
+.table-box-wrap .table-box table tbody tr {
+    display: table-row;
+}
+
+/* imgcard.html */
+
+@media all and (max-width: 1030px) {
+    .container_img {
+        margin-left: -340px;
+    }
+    .img-text {
+        width: 700px;
+    }
+}
+
+@media all and (min-width: 1030px) {
+    .container_img {
+        margin-left: -510px;
+    }
+}
+
+.container_img {
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    float: left;
+    margin: 20px;
+}
+
+.flip-card-last {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: #fcf6f5;
+}
+
+.flip-card-back {
+    background-color: #7b9acc;
+    color: #fcf6f5;
+    transform: rotateY(180deg);
+}
+
+.img-row-01 {
+    margin-top: 90px;
+}
+
+.img-text {
+    text-align: center;
+}
+
+/* clock */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+#clock {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #7b9acc;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #7b9acc;
+    text-shadow: 0 0 20px rgb(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+
+.time {
+    letter-spacing: 0.05em;
+    font-size: 100px;
+    padding: 5px 0;
+}
+.date {
+    letter-spacing: 0.1em;
+    font-size: 44px;
+}
+.text {
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    padding: 20px 0 0;
 }
