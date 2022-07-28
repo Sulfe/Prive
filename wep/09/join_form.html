@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body{
+                margin: 100px 0 100px 0;
+            }
+            .container {
+    width: 600px;
+    margin: auto;
+}
+
+.container > div > div {
+    text-align: center;
+}
+
+.container > div > div > input,
+select {
+    margin: 10px 0px 10px 0px;
+    width: 600px;
+    height: 30px;
+}
+
+.container > div > div > span > input {
+    margin: 10px 0px 10px 0px;
+    width: 600px;
+    height: 30px;
+}
+
+.title {
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #000000;
+}
+
+textarea{
+    width: 600px;
+    min-height: 200px;
+    resize: vertical;
+}
+
+        </style>
+    </head>
+    <body>
+   
+        <form action="">
+            <div class="container">
+                <div>
+                    <h3>아이디</h3>
+                    <div>
+                    <input type="text" />
+                    </div>
+                </div>
+                <div>
+                    <h3>비밀번호</h3>
+                    <div>
+                    <input type="password" />
+                    </div>
+                </div>
+                <div>
+                    <h3>비밀번호 재확인</h3>
+                    <div>
+                    <input type="password" />
+                    </div>
+                </div>
+                <div>
+                    <h3>이름</h3>
+                    <div>
+                    <input type="text" />
+                    </div>
+                </div>
+                <div>
+                    <h3>생년월일</h3>
+                    <div>
+                    <span>
+                        <input type="text" placeholder="년(4자)"/>
+                        <select name="mm" id="mm">
+                            <option value="">월</option>
+                            <option value="01">1월</option>
+                            <option value="02">2월</option>
+                            <option value="03">3월</option>
+                            <option value="04">4월</option>
+                            <option value="05">5월</option>
+                            <option value="06">6월</option>
+                            <option value="07">7월</option>
+                            <option value="08">8월</option>
+                            <option value="09">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                        <input type="text" placeholder="일">
+                    </span>
+                    </div>
+                </div>
+                <div>
+                    <h3>성별</h3>
+                    <div>
+                    <select name="gender" id="">
+                        <option value=""">성별</option>
+                        <option value="남자">남자</option>
+                        <option value="여자">여자</option>
+                    </select>
+                    </div>
+                </div>
+                <div>
+                    <h3>이메일</h3>
+                    <div>
+                    <input type="text" placeholder="선택입력">
+                    </div>
+                </div>
+                <div>
+                    <h3>휴대전화</h3>
+                    <div>
+                    <input type="text" placeholder="전화번호 입력">
+                    </div>
+                </div>
+                <div>
+                    <h3>자기 소개</h3>
+                    <textarea name="" id="" cols="40" rows="10"></textarea>
+                </div>
+                <button>가입하기</button>
+            </div>
+        </form>
+        
+    </body>
+</html>

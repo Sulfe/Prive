@@ -279,7 +279,9 @@ body {
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+    transform: scale(1.5, 1.5);
+    z-index: 99;
+    /*transform: rotateY(180deg);*/
 }
 
 .flip-card-front,
@@ -308,6 +310,7 @@ body {
 
 .img-text {
     text-align: center;
+    margin: 200px 0 200px 0;
 }
 
 /* clock */
